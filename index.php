@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
-<!--        <link rel="stylesheet" type="text/css" href="switch.css">-->
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
             var sorted = false;
