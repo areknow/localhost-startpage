@@ -1,0 +1,312 @@
+/* line 1, /Applications/MAMP/htdocs/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 4, /Applications/MAMP/htdocs/style.scss */
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed; }
+
+/* line 17, /Applications/MAMP/htdocs/style.scss */
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative; }
+
+/* line 25, /Applications/MAMP/htdocs/style.scss */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+/* line 33, /Applications/MAMP/htdocs/style.scss */
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+  position: absolute;
+  top: 16%;
+  right: 0;
+  left: 0;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  z-index: 2; }
+
+/* line 44, /Applications/MAMP/htdocs/style.scss */
+.wrapper-alpha {
+  max-width: 1100px;
+  margin: auto;
+  position: absolute;
+  top: 16%;
+  right: 0;
+  left: 0;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  z-index: 2; }
+
+/* line 55, /Applications/MAMP/htdocs/style.scss */
+.tile {
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  width: 130px;
+  box-sizing: border-box;
+  background: rgba(240, 240, 240, 0.47);
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #e2e2e2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+  border-radius: 3px; }
+  /* line 73, /Applications/MAMP/htdocs/style.scss */
+  .tile:hover {
+    background: rgba(240, 240, 240, 0.8);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.53);
+    color: #333;
+    width: 134px;
+    height: 104px;
+    line-height: 104px;
+    font-size: 14px; }
+
+/* line 84, /Applications/MAMP/htdocs/style.scss */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: #fff;
+  text-align: left;
+  z-index: 3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33);
+  overflow: hidden;
+  padding: 0 10px; }
+  /* line 97, /Applications/MAMP/htdocs/style.scss */
+  nav .block {
+    padding: 10px;
+    display: inline-block; }
+  /* line 101, /Applications/MAMP/htdocs/style.scss */
+  nav #drop {
+    z-index: 5;
+    position: relative;
+    cursor: pointer; }
+  /* line 106, /Applications/MAMP/htdocs/style.scss */
+  nav #drop:hover .fa-bars {
+    color: #808080; }
+  /* line 109, /Applications/MAMP/htdocs/style.scss */
+  nav .switch-wrap {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    height: 38px;
+    padding-top: 9px;
+    cursor: default; }
+    /* line 120, /Applications/MAMP/htdocs/style.scss */
+    nav .switch-wrap form {
+      margin: 0;
+      padding: 0; }
+    /* line 125, /Applications/MAMP/htdocs/style.scss */
+    nav .switch-wrap .switch {
+      position: relative;
+      display: inline-block;
+      color: #808080;
+      z-index: 4;
+      vertical-align: middle;
+      margin: auto;
+      font-size: 12px; }
+      /* line 134, /Applications/MAMP/htdocs/style.scss */
+      nav .switch-wrap .switch .label {
+        vertical-align: top;
+        padding: 3px 10px; }
+    /* line 139, /Applications/MAMP/htdocs/style.scss */
+    nav .switch-wrap .switch:hover label {
+      background: #fff; }
+    /* line 142, /Applications/MAMP/htdocs/style.scss */
+    nav .switch-wrap .switch:hover label:after {
+      background: #fff; }
+
+/* line 149, /Applications/MAMP/htdocs/style.scss */
+.dropdown {
+  position: fixed;
+  display: none;
+  text-align: left;
+  color: #fff;
+  background: black;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33);
+  z-index: 3;
+  opacity: 0.8;
+  padding: 10px 0; }
+  /* line 163, /Applications/MAMP/htdocs/style.scss */
+  .dropdown .row {
+    padding: 15px 30px;
+    cursor: pointer; }
+    /* line 167, /Applications/MAMP/htdocs/style.scss */
+    .dropdown .row:hover {
+      background: white;
+      color: #000; }
+  /* line 173, /Applications/MAMP/htdocs/style.scss */
+  .dropdown i {
+    margin-right: 15px;
+    width: 20px;
+    text-align: center; }
+
+/* line 186, /Applications/MAMP/htdocs/style.scss */
+.right {
+  float: right; }
+
+/* line 189, /Applications/MAMP/htdocs/style.scss */
+.inline {
+  display: inline-block; }
+
+/* line 192, /Applications/MAMP/htdocs/style.scss */
+.hidden {
+  display: none; }
+
+/* line 195, /Applications/MAMP/htdocs/style.scss */
+.mobile {
+  display: none; }
+
+/* line 198, /Applications/MAMP/htdocs/style.scss */
+.desktop {
+  display: inline-block; }
+
+/* line 208, /Applications/MAMP/htdocs/style.scss */
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden; }
+
+/* line 213, /Applications/MAMP/htdocs/style.scss */
+.cmn-toggle + label {
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 224, /Applications/MAMP/htdocs/style.scss */
+input.cmn-toggle-round-flat + label {
+  width: 40px;
+  height: 20px;
+  background-color: #808080;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s; }
+
+/* line 238, /Applications/MAMP/htdocs/style.scss */
+input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: ""; }
+
+/* line 243, /Applications/MAMP/htdocs/style.scss */
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: black;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s; }
+
+/* line 259, /Applications/MAMP/htdocs/style.scss */
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 12px;
+  background-color: #808080;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition: margin 0.4s, background 0.4s;
+  -moz-transition: margin 0.4s, background 0.4s;
+  -o-transition: margin 0.4s, background 0.4s;
+  transition: margin 0.4s, background 0.4s; }
+
+/* line 275, /Applications/MAMP/htdocs/style.scss */
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #808080; }
+
+/* line 278, /Applications/MAMP/htdocs/style.scss */
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 20px;
+  background-color: #808080; }
+
+@media screen and (max-device-width: 700px), screen and (max-width: 700px) {
+  /* line 298, /Applications/MAMP/htdocs/style.scss */
+  html {
+    background: #454f51; }
+
+  /* line 301, /Applications/MAMP/htdocs/style.scss */
+  .wrapper {
+    top: 60px; }
+    /* line 304, /Applications/MAMP/htdocs/style.scss */
+    .wrapper .tile {
+      width: 115px;
+      height: 80px;
+      line-height: 80px;
+      margin: 4px; }
+
+  /* line 312, /Applications/MAMP/htdocs/style.scss */
+  nav .switch-wrap {
+    padding-top: 10px; }
+    /* line 315, /Applications/MAMP/htdocs/style.scss */
+    nav .switch-wrap .label {
+      display: none; }
+
+  /* line 320, /Applications/MAMP/htdocs/style.scss */
+  .dropdown {
+    width: 100%; }
+
+  /* line 323, /Applications/MAMP/htdocs/style.scss */
+  .mobile {
+    display: inline-block; }
+
+  /* line 326, /Applications/MAMP/htdocs/style.scss */
+  .desktop {
+    display: none; }
+ }
+
+/*# sourceMappingURL=style.css.map */
